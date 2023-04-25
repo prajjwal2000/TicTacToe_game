@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D62828" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/box"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Welcome"
+            android:textColor="#003049"
+            android:textSize="40dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box"
+            android:layout_width="370dp"
+            android:layout_height="330dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardBackgroundColor="#EAE2B7"
+            app:cardCornerRadius="30dp">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="3"
+                android:rowCount="3">
+
+                <android.widget.Button
+                    android:id="@+id/btn1"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="Check"
+                    android:padding="18dp"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <android.widget.Button
+                    android:id="@+id/btn2"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="Check"
+                    android:padding="18dp"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <android.widget.Button
+                    android:id="@+id/btn3"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="Check"
+                    android:padding="18dp"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <android.widget.Button
+                    android:id="@+id/btn4"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="Check"
+                    android:padding="18dp"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <android.widget.Button
+                    android:id="@+id/btn5"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="Check"
+                    android:padding="18dp"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <android.widget.Button
+                    android:id="@+id/btn6"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="Check"
+                    android:padding="18dp"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <android.widget.Button
+                    android:id="@+id/btn7"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="Check"
+                    android:padding="18dp"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <android.widget.Button
+                    android:id="@+id/btn8"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="Check"
+                    android:padding="18dp"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <android.widget.Button
+                    android:id="@+id/btn9"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_shape"
+                    android:onClick="Check"
+                    android:padding="18dp"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/exitbtn"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/box"
+            app:cardCornerRadius="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#003049">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXIT"
+                android:layout_gravity="center"
+                android:textColor="#EAE2B7"
+                android:fontFamily="@font/aclonica"
+                android:textSize="20dp"/>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
